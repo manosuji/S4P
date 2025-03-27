@@ -104,7 +104,7 @@ function setup() {
   button.style('color', '#4A2545');
   button.style('font-size', txtSize * 2 + 'px');
   button.style('border-width', '0px');
-  button.mousePressed(() => window.location.href = 'starlike/index.html');
+  button.mousePressed(() => window.location.href = '../index.html');
   
   
   textSize(txtSize);
