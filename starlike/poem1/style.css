@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'blockhead';
+  src: url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/Blockhead%20Illust%20OT%20Unplugged.otf?v=1739731361685');
+       url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/Blockhead%20Illust%20OT%20Unplugged.otf?v=1739731361685') format('otf'),
+}
+
+body {
+  font-family: 'blockhead', sans-serif;
+}
+
+@font-face {
+  font-family: 'raritas';
+  src: url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/Raritas%20Regular.otf?v=1739733576620');
+       url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/Raritas%20Regular.otf?v=1739733576620') format('otf'),
+}
+
+body {
+  font-family: 'raritas', sans-serif;
+}
+
+@font-face {
+  font-family: 'zeit';
+  src: url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/ZeitGuys%20OT%20One.otf?v=1739733579647');
+       url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/ZeitGuys%20OT%20One.otf?v=1739733579647') format('otf'),
+}
+
+body {
+  font-family: 'zeit', sans-serif;
+}
+
+@font-face {
+  font-family: 'stars';
+  src: url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/HWT%20Star%20Ornaments.otf?v=1739733582968');
+       url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/HWT%20Star%20Ornaments.otf?v=1739733582968') format('otf'),
+}
+
+body {
+  font-family: 'stars', sans-serif;
+}
+
+@font-face {
+  font-family: 'goudy';
+  src: url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/LTC%20Goudy%20Ornate%20Regular.otf?v=1739733587297');
+       url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/LTC%20Goudy%20Ornate%20Regular.otf?v=1739733587297') format('otf'),
+}
+
+body {
+  font-family: 'goudy', sans-serif;
+}
