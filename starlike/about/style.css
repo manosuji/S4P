@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'raritas';
+  src: url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/Raritas%20Regular.otf?v=1739733576620');
+       url('https://cdn.glitch.global/12fe13c5-7c2a-4456-bf8d-3af323247d14/Raritas%20Regular.otf?v=1739733576620') format('otf'),
+}
+
+body {
+  font-family: 'raritas', sans-serif;
+}
