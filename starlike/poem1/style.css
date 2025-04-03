@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'raritas'; /* This is an arbitrary name -- whatever works for you */
-  src: url('/starlike/fonts/raritas.otf')
+  src: url('../fonts/raritas.otf')
 }
 
 body {
@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: 'stars';
-  src: url('/starlike/fonts/star_ornaments.otf')
+  src: url('../fonts/star_ornaments.otf')
 }
 
 body {
