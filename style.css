@@ -10,6 +10,10 @@ body {
     font-size: x-large;
 }
 
+#starlike {
+    font-family: 'stars', monospace;
+}
+
 footer {
     position:fixed;
     left: 0;
@@ -19,7 +23,3 @@ footer {
     color: white;
     font-size: small;
 }
-  
-#starlike {
-    font-family: 'stars', sans-serif;
-  }
