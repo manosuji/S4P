@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'raritas'; /* This is an arbitrary name -- whatever works for you */
+    src: url('/starlike/fonts/raritas.otf')
+  }
+  
+  @font-face {
+    font-family: 'stars';
+    src: url('/starlike/fonts/star_ornaments.otf')
+  }
+
+body {
+    font-family: monospace;
+    text-align: center;
+    line-height: 200%;
+    font-size: x-large;
+}
+
+footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: small;
+}
+  
+#starlike {
+    font-family: 'stars', sans-serif;
+  }
