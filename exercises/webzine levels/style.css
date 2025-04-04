@@ -1,0 +1,17 @@
+body {
+    font-family: monospace;
+    text-align: center;
+    line-height: 200%;
+    font-size: x-large;
+    margin: 50px;
+}
+
+footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: small;
+}
