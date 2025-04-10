@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'avara-black';
+    src: url('Avara-Black.woff') format('woff');
+  }
+
+body {
+    background-color: #fffff0;
+}
+
+#constraint {
+    font-family: avara-black;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.letra.one {
+    top: 5%;
+    right: 5%;
+    transform: rotate(20deg);
+    max-width: 15%;
+}
+
+.letra.two {
+    top: 35%;
+    left: -10%;
+    max-width: 20%;
+}
+
+.letra.three {
+    bottom: 3%;
+    right: -2%;
+    max-width: 17%;
+    transform: rotate(-30deg);
+}
+
+.letra {
+    position: fixed;
+    width: 100%;
+    display: block;
+    max-width: 15%;
+}
