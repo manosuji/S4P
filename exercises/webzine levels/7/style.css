@@ -3,13 +3,9 @@
     src: url('Avara-Black.woff') format('woff');
   }
 
-body {
-    background-color: #fffff0;
-}
-
 #constraint {
     font-family: avara-black;
-    font-size: 10rem;
+    font-size: 10vw;
     text-align: center;
     margin-top: 22%;
 }
