@@ -5,29 +5,29 @@
 
 #constraint {
     font-family: avara-black;
-    font-size: 10vw;
-    text-align: center;
-    margin-top: 22%;
+    font-size: x-large;
+    top: -5%;
 }
 
 .letra.one {
     top: 5%;
     right: 5%;
     transform: rotate(20deg);
-    max-width: 15%;
+    max-width: 10%;
 }
 
 .letra.two {
-    top: 35%;
+    top: 42%;
     left: -10%;
-    max-width: 20%;
+    transform: rotate(-20deg);
+    max-width: 15%;
 }
 
 .letra.three {
     bottom: 3%;
     right: -2%;
-    max-width: 17%;
-    transform: rotate(-30deg);
+    max-width: 15%;
+    
 }
 
 .letra {
@@ -35,4 +35,17 @@
     width: 100%;
     display: block;
     max-width: 15%;
+}
+
+@media only screen and (min-width: 768px) {
+    .letra.two {
+        left: auto;
+        right: 18%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .letra.three {
+        bottom: -8%;
+    }
 }
