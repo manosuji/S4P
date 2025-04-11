@@ -3,10 +3,17 @@
     src: url('Avara-Black.woff') format('woff');
   }
 
+body {
+    background-color: #fffff0;
+}
+
 #constraint {
     font-family: avara-black;
-    font-size: x-large;
+    font-size: 10vw;
+    position: absolute;
+    left: 5%;
     top: -5%;
+    display: block;
 }
 
 .letra.one {
