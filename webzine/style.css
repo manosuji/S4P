@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'avara-black';
+    src: url('../assets/Avara-Black.woff') format('woff');
+  }
+
+@font-face {
+    font-family: 'karrik';
+    src: url('../assets/karrik.woff') format('woff');
+  }
+
+body {
+    background-color: #fffff0;
+    font-family: karrik;
+}
+
+#constraint {
+    font-family: avara-black;
+    font-size: 10vw;
+    left: 5%;
+    top: -5%;
+    display: block;
+    margin-bottom: auto;
+}
+
+.letra {
+    position: fixed;
+    width: 100%;
+    display: block;
+    max-width: 15%;
+}
+
+.letra.one {
+    top: 5%;
+    right: 5%;
+    transform: rotate(20deg);
+    max-width: 10%;
+}
+
+.letra.two {
+    top: 42%;
+    left: -10%;
+    transform: rotate(-20deg);
+    max-width: 15%;
+}
+
+.letra.three {
+    bottom: 3%;
+    right: -2%;
+    max-width: 15%;
+    transform: rotate(50deg);
+}
+
+@media only screen and (min-width: 768px) {
+    .letra.two {
+        left: auto;
+        right: 18%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .letra.three {
+        bottom: -8%;
+    }
+}
