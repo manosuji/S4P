@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'avara-black';
-    src: url('../assets/Avara-Black.woff') format('woff');
+    src: url('../assets/Avara-Bold.woff') format('woff');
   }
 
 @font-face {
@@ -9,8 +9,9 @@
   }
 
 body {
-    background-color: #fffff0;
-    font-family: karrik;
+    /* background-color: #fffff0; */
+    /* font-family: karrik; */
+    max-width: 800px;
 }
 
 #constraint {
@@ -38,15 +39,15 @@ body {
 
 .letra.two {
     top: 42%;
-    left: -10%;
-    transform: rotate(-20deg);
-    max-width: 15%;
+    left: -5%;
+    transform: rotate(120deg);
+    max-width: 10%;
 }
 
 .letra.three {
     bottom: 3%;
     right: -2%;
-    max-width: 15%;
+    max-width: 10%;
     transform: rotate(50deg);
 }
 
