@@ -15,7 +15,7 @@ body {
     margin-left: 5%;
 }
 
-#constraint {
+.title {
     font-family: avara-black;
     font-size: 10vw;
     left: 5%;
@@ -33,6 +33,8 @@ body {
 .subsection {
     text-align: center;
     max-width: 650px;
+    border-style: dashed;
+    border-color: black;
 }
 
 .bob {
