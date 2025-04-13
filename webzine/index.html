@@ -15,8 +15,8 @@
     Constrained writing is a literary technique in which the writer is bound by some condition that forbids certain things or imposes a pattern.
     </div>
     <br><br><br>
-    <div class="">
-        <p class="subsection"><em>the palindrome</em></p>
+    <div class="subsection">
+        <p class="subheading"><em>the palindrome</em></p>
         <div class = "bob">
             <p>
             <!-- lyrics to the song "Bob" by "Weird Al" Yankovic -->
@@ -29,7 +29,26 @@
             Too bad I hid a boot<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </p>
             
-            <p class="bob image"><a href="https://www.youtube.com/watch?v=JUQDzj6R3p4" target="_blank"> <img src="../assets/photos/weirdal.png" width="300"></a></p>
+            <p class="bob image">
+                <img src="../assets/photos/weirdal.png" width="300" onClick="playPause()" alt="Weird Al">
+              </p>
+              <audio id="audioElement" src="../assets/sound/weird_al_bob.mp3" autoplay loop></audio>
+              <p>Song</p>
+              
+              <script>
+                var aud = document.getElementById("audioElement"); // Reference to the audio element
+                var isPlaying = true; // Start with autoplay enabled
+              
+                function playPause() {
+                  if (isPlaying) {
+                    aud.pause(); // Pause the audio
+                  } else {
+                    aud.play(); // Play the audio
+                  }
+                  isPlaying = !isPlaying; // Toggle the state
+                }
+              </script>
+
     </div></div>
     
   </body>
