@@ -30,11 +30,12 @@ body {
     line-height: 1.5em;
 }
 
-.subsection {
+.subheading {
     text-align: center;
+}
+
+.subsection {
     max-width: 650px;
-    border-style: dashed;
-    border-color: black;
 }
 
 .bob {
@@ -42,10 +43,19 @@ body {
     letter-spacing: .2rem;
     text-transform: uppercase;
     display:flex;
+    flex-wrap: wrap;
   }
 
 .bob.image {
     transform: rotate(10deg);
+    /* border-style: dashed;
+    border-color: black; */
+    padding-left: 30px;
+    text-align: right;
+}
+
+.button {
+    border-radius: 100%;
 }
 
 .letra {
