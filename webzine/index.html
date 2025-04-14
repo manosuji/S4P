@@ -17,8 +17,8 @@
     <br><br><br>
     <div class="subsection">
         <p class="subheading"><em>the palindrome</em></p>
-        <div class = "bob">
-            <p>
+        <div class = "content">
+            <p id="bob">
             <!-- lyrics to the song "Bob" by "Weird Al" Yankovic -->
             I, man, am Regal, a German am I<br>&nbsp;
             Never odd or even<br>&nbsp;&nbsp;
@@ -28,27 +28,12 @@
             No lemons, no melon<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             Too bad I hid a boot<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </p>
-            
-            <p class="bob image">
-                <img src="../assets/photos/weirdal.png" width="300" onClick="playPause()" alt="Weird Al">
-              </p>
-              <audio id="audioElement" src="../assets/sound/weird_al_bob.mp3" autoplay loop></audio>
-              
-              <script>
-                var aud = document.getElementById("audioElement"); // Reference to the audio element
-                var isPlaying = true; // Start with autoplay enabled
-              
-                function playPause() {
-                  if (isPlaying) {
-                    aud.pause(); // Pause the audio
-                  } else {
-                    aud.play(); // Play the audio
-                  }
-                  isPlaying = !isPlaying; // Toggle the state
-                }
-              </script>
-
-    </div></div>
+            <!-- image cutout of weird al -->
+            <img class="img" src="../assets/photos/weirdal.png" width="300"alt="Weird Al">
+            <!-- basic audio player -->
+            <audio controls src="../assets/sound/weird_al_bob.mp3"></audio>
+        </div>
+    </div>
     
   </body>
 </html>
