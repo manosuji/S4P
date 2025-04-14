@@ -3,18 +3,13 @@
     src: url('../assets/Avara-Bold.woff') format('woff');
   }
 
-@font-face {
-    font-family: 'karrik';
-    src: url('../assets/karrik.woff') format('woff');
-  }
-
 body {
     /* background-color: #fffff0; */
-    /* font-family: karrik; */
     font-size: 26px;
     margin-left: 5%;
 }
 
+/* what does the title text look like */
 .title {
     font-family: avara-black;
     font-size: 10vw;
@@ -25,6 +20,7 @@ body {
     margin-bottom: auto;
 }
 
+/* defines components of a section */
 .subtitle {
     max-width: 650px;
     line-height: 1.5em;
@@ -38,17 +34,62 @@ body {
     text-align: center;
 }
 
-#bob {
-    font-size: small;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-}
-
+/* for content within a subsection */
 .content {
     display:flex;
     flex-wrap: wrap;
 }
 
+/* specific to the lyrics of the song bob */
+.bob {
+    font-size: small;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+/* what does a callout card look like */
+.callout {
+    font-size: medium;
+    position: relative;
+    top: initial;
+    left: initial;
+    border: 1px dotted;
+    border-radius: 4px;
+    padding:10px;
+    transform: rotate(5deg);
+    max-width: fit-content;
+    margin: auto;
+    text-align: right;
+}
+
+/* to flip a callout card */
+.callout.flip {
+    transition: transform 0.8s;
+    transform-origin: center;
+}
+.callout.flip:hover {
+    transform: rotateY(180deg);
+  }
+
+/* for photos which dance side to side */
+.flicker-photo {
+    width: 350px;
+    animation: flickerRotate 1.25s steps(1) infinite;
+}
+
+@keyframes flickerRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+/* handles positioning of anchored letra images on side */
 .letra {
     position: fixed;
     width: 100%;
@@ -80,12 +121,8 @@ body {
     transform: rotate(50deg);
 }
 
-@media (max-width: 535px) {
-    body {
-        font-size: 20px;
-    }
-}
-
+/* shoves letra images around if screen is small
+middle one goes left, bottom one moves up slightly */
 @media only screen and (min-width: 768px) {
     .letra.two {
         left: auto;
@@ -96,5 +133,12 @@ body {
 @media only screen and (min-width: 768px) {
     .letra.three {
         bottom: -8%;
+    }
+}
+
+/* makes body text smaller for small screens */
+@media (max-width: 535px) {
+    body {
+        font-size: 20px;
     }
 }
