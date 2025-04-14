@@ -30,33 +30,24 @@ body {
     line-height: 1.5em;
 }
 
-.subheading {
-    text-align: center;
-}
-
 .subsection {
     max-width: 650px;
 }
 
-.bob {
+.subheading {
+    text-align: center;
+}
+
+#bob {
     font-size: small;
     letter-spacing: .2rem;
     text-transform: uppercase;
+}
+
+.content {
     display:flex;
     flex-wrap: wrap;
   }
-
-.bob.image {
-    transform: rotate(10deg);
-    /* border-style: dashed;
-    border-color: black; */
-    padding-left: 30px;
-    text-align: right;
-}
-
-.button {
-    border-radius: 100%;
-}
 
 .letra {
     position: fixed;
