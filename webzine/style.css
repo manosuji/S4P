@@ -90,8 +90,13 @@ body {
 }
 
 .flicker-photo.ella {
-    width: 250px;
+    width: 200px;
     margin:15px;
+}
+
+.header {
+    text-align: left;
+    margin-top: 5%;
 }
 
 .footer {
