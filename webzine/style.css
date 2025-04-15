@@ -22,6 +22,7 @@ body {
 
 /* defines components of a section */
 .subtitle {
+    
     max-width: 650px;
     line-height: 1.5em;
 }
@@ -42,7 +43,6 @@ body {
 
 /* specific to the lyrics of the song bob */
 .bob {
-    font-size: small;
     letter-spacing: .2rem;
     text-transform: uppercase;
 }
@@ -87,6 +87,17 @@ body {
     100% {
       transform: rotate(0deg);
     }
+}
+
+.flicker-photo.ella {
+    width: 250px;
+    margin:15px;
+}
+
+.footer {
+    text-align: right;
+    margin-right: 20%;
+    margin-bottom: 5%;
 }
 
 /* handles positioning of anchored letra images on side */
@@ -140,5 +151,9 @@ middle one goes left, bottom one moves up slightly */
 @media (max-width: 535px) {
     body {
         font-size: 20px;
+    }
+    .footer {
+        text-align: center;
+        margin:0;
     }
 }
