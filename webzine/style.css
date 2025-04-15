@@ -59,8 +59,8 @@ body {
     transform: rotate(5deg);
     max-width: fit-content;
     margin: auto;
-    text-align: right;
 }
+
 
 /* to flip a callout card */
 .callout.flip {
