@@ -105,6 +105,12 @@ a:active {
     color:black;
 }
 
+.bemused {
+    display: flex;
+    width: max-content;
+    gap: 30px;
+}
+
 /* photo spacing */
 
 .photo {
