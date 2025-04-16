@@ -108,7 +108,8 @@ a:active {
 /* photo spacing */
 
 .photo {
-    margin: 10px;
+    /* margin: 10px; */
+    padding: 5px
 }
 
 /* hover effect of photos */
@@ -161,6 +162,18 @@ a:active {
     }
 }
 
+.shake:hover {
+    animation: shake 0.5s ease-in-out infinite; /* Adjust duration and repetitions */
+  }
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
 /* adjust size and positioning of specific photos */
 
 .weird-al {
@@ -182,6 +195,8 @@ a:active {
 
 .abc {
     width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .vowels {
@@ -190,6 +205,14 @@ a:active {
 }
 .vowels:hover {
     content: url('./assets/vowels_crossed.png');
+}
+
+.dog {
+    width: 150px;
+}
+
+.angrydog {
+    max-width:900px;
 }
 
 /* for buttons that link at top and bottom of page */
@@ -260,5 +283,11 @@ middle one goes left, bottom one moves up slightly */
     .footer {
         text-align: center;
         margin:0;
+    }
+    .gallery {
+        justify-content: center;
+    }
+    .photo {
+        margin: 0px 15px 50px 15px;
     }
 }
