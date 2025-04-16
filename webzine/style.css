@@ -61,6 +61,7 @@ body {
     flex-wrap: wrap;
     /* justify-content: center; */
     align-items: center;
+    max-width: 800px;
 }
 
 /* what do links look like */
@@ -90,6 +91,8 @@ a:active {
     text-transform: uppercase;
 }
 
+/* photo spacing */
+
 .photo {
     margin: 10px
 }
@@ -110,9 +113,24 @@ a:active {
     transform: rotateY(180deg);
   }
 
+.spin {
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
 /* for photos which dance side to side */
-.flicker-photo {
-    width: 350px;
+.flicker {
     margin:15px;
     animation: flickerRotate 1.25s steps(1) infinite;
 }
@@ -129,7 +147,11 @@ a:active {
     }
 }
 
-/* adjust size and positioning of photos */
+/* adjust size and positioning of specific photos */
+
+.weird-al {
+    width: 350px;
+}
 
 .ella {
     width: 200px;
@@ -141,6 +163,10 @@ a:active {
 }
 
 .blackout {
+    width: 200px;
+}
+
+.abc {
     width: 200px;
 }
 
