@@ -91,10 +91,19 @@ a:active {
     text-transform: uppercase;
 }
 
+#eunoia {
+    color: white;
+}
+#e {
+    color: black;
+    padding: 15px;
+    background-color: black;
+}
+
 /* photo spacing */
 
 .photo {
-    margin: 10px
+    margin: 10px;
 }
 
 /* hover effect of photos */
@@ -168,6 +177,14 @@ a:active {
 
 .abc {
     width: 200px;
+}
+
+.vowels {
+    width: 200px;
+    margin-left: 30px;
+}
+.vowels:hover {
+    content: url('./assets/vowels_crossed.png');
 }
 
 /* for buttons that link at top and bottom of page */
