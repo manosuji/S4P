@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'stars';
-    src: url('assets/star_ornaments.otf')
+    src: url('./starlike/assets/star_ornaments.otf')
   }
 
 body {
