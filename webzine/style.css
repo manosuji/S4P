@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'avara-black';
-    src: url('../assets/Avara-Bold.woff') format('woff');
+    font-family: 'avara-bold';
+    src: url('./assets/Avara-Bold.woff') format('woff');
   }
 
 body {
@@ -11,7 +11,7 @@ body {
 
 /* what does the title text look like */
 .title {
-    font-family: avara-black;
+    font-family: avara-bold;
     font-size: 10vw;
     left: 5%;
     top: -5%;
@@ -65,7 +65,7 @@ body {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 }
 
