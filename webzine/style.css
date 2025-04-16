@@ -40,12 +40,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* specific to the lyrics of the song bob */
-.bob {
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-}
-
 /* what does a callout card look like */
 .callout {
     font-size: medium;
@@ -65,7 +59,7 @@ body {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -88,6 +82,23 @@ a:visited {
 
 a:active {
     color: orange;
+}
+
+/* specific styling */
+.bob {
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.photo {
+    margin: 10px
+}
+
+/* hover effect of photos */
+
+.photo:hover {
+    border-style: dotted;
+    border-color:cornflowerblue;
 }
 
 /* to make something flippable */
@@ -118,19 +129,19 @@ a:active {
     }
 }
 
-.flicker-photo.ella {
-    width: 200px;
-    /* border-style: dotted;
-    border-color: black; */
-}
+/* adjust size and positioning of photos */
 
-/* adjust size and positioning of car png */
+.ella {
+    width: 200px;
+}
 
 .car {
     width: 300px;
     transform: rotate(10deg);
-    /* border-style: dotted;
-    border-color: black; */
+}
+
+.blackout {
+    width: 200px;
 }
 
 /* for buttons that link at top and bottom of page */
