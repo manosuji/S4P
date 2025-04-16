@@ -215,6 +215,10 @@ a:active {
     max-width:900px;
 }
 
+.book {
+    width: 250px;
+}
+
 /* for buttons that link at top and bottom of page */
 
 .header {
