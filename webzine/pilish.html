@@ -11,35 +11,75 @@
       <img class="letra two" src="./assets/letra.png">
       <img class="letra three" src="./assets/letra.png">
       <div class="header"><a href="./index.html">back</a></div>
-        <div class="subsection" id="top">
+        <div class="subsection wide" id="top">
             <p class="subheading"><em>pilish</em></p>
             <p class="callout">3.14...yada yada yada</p>
-            <br>
+            <br><br>
             <div class="bemused">
-            <p id="translated">For a time I stood, relishing my autumn night.<br>Amy hated wordless nighttime walking intensely<br>and so had strutted home dourly.<br>"I'm rather cold," she had muttered, "and so ... goodbye."<br><br>Welcoming night surrounded me; lukewarm droplets fell.<br>I continued walking. I passed gentlemen<br>and derelicts wandering the streets alone.<br>I considered their fortunes, my misfortune.<br><br>Reviewing various past incidents<br>(lost love, women discarded,<br>my old residences, careers, comrades)<br>I walked past mysterious alleys to<br>suddenly arrive at Blackwood's Bookshop.<br>Dignified bookworms searched stacks of inviting paperbacks.<br>And then, suddenly, my stare met hers.<br><br>"Um ... I ... I ..."<br>"Quickly, sweetheart, softly! Outside!"<br><br>Strangely enjoying it, I went,<br>somewhat bewildered although surely happy.<br>I sat so silently as she approached.<br>Coming closer, then bending delicately alongside,<br>she tenderly said,<br><br>This strong, pronounced technique which style constrains<br>Shall delegate to me, now I believe,<br>An earth for loves unleashed like hurricanes;<br>Herewith I do innately this perceive.<br><br>"I ... I ...," I giddily said again, resembling an absolute fool.<br>I spluttered, "I'm awfully ridiculous.<br>I apologize for babbling again."<br>So I (a blithering idiot) spoke, while everybody stared.<br><br>"Hush, hush! Listen up! Go instantly home.<br>Remember important stuff:<br>Love, integrity, art, literature," she lectured.<br><br>I entreated softly, "Your name is ...?"<br>Suddenly, silently, a driverless limousine stopped,<br>doors neatly marked "Muses Unlimited."<br>She was gone.</p>
-            <p>For a time I stood, relishing my autumn night.<br>Amy hated wordless nighttime walking intensely<br>and so had strutted home dourly.<br>"I'm rather cold," she had muttered, "and so ... goodbye."<br><br>Welcoming night surrounded me; lukewarm droplets fell.<br>I continued walking. I passed gentlemen<br>and derelicts wandering the streets alone.<br>I considered their fortunes, my misfortune.<br><br>Reviewing various past incidents<br>(lost love, women discarded,<br>my old residences, careers, comrades)<br>I walked past mysterious alleys to<br>suddenly arrive at Blackwood's Bookshop.<br>Dignified bookworms searched stacks of inviting paperbacks.<br>And then, suddenly, my stare met hers.<br><br>"Um ... I ... I ..."<br>"Quickly, sweetheart, softly! Outside!"<br><br>Strangely enjoying it, I went,<br>somewhat bewildered although surely happy.<br>I sat so silently as she approached.<br>Coming closer, then bending delicately alongside,<br>she tenderly said,<br><br>This strong, pronounced technique which style constrains<br>Shall delegate to me, now I believe,<br>An earth for loves unleashed like hurricanes;<br>Herewith I do innately this perceive.<br><br>"I ... I ...," I giddily said again, resembling an absolute fool.<br>I spluttered, "I'm awfully ridiculous.<br>I apologize for babbling again."<br>So I (a blithering idiot) spoke, while everybody stared.<br><br>"Hush, hush! Listen up! Go instantly home.<br>Remember important stuff:<br>Love, integrity, art, literature," she lectured.<br><br>I entreated softly, "Your name is ...?"<br>Suddenly, silently, a driverless limousine stopped,<br>doors neatly marked "Muses Unlimited."<br>She was gone.</p>
-            <script>
-                // replace words with their lengths
-                const paragraph = document.getElementById("translated");
-                const replaceWordsWithLength = (node) => {
-                if (node.nodeType === Node.TEXT_NODE) {
-                    // process text  only
-                    const words = node.nodeValue.split(" ");
-                    const processed = words
-                    .map(word => {
-                        const cleanedWord = word.replace(/[^a-zA-Z0-9]/g, ""); // remove punctuation
-                        return cleanedWord.length; // get the word's length
-                    })
-                    .filter(length => length !== 0) // remove words with length 0
-                    .map(length => length === 10 ? 0 : length); // replace length 10 with 0
-                    node.nodeValue = processed.join(" ");
-                } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== "BR") {
-                    // recursively process
-                    node.childNodes.forEach(replaceWordsWithLength);
-                }
-                };
+            <div class="row">
+            <p class="translate">For a time I stood, relishing my autumn night.<br>Amy hated wordless nighttime walking intensely<br>and so had strutted home dourly.<br>"I'm rather cold," she had muttered, "and so ... goodbye."</p>
+            <p>For a time I stood, relishing my autumn night.<br>Amy hated wordless nighttime walking intensely<br>and so had strutted home dourly.<br>"I'm rather cold," she had muttered, "and so ... goodbye."</p>
+            </div>
+            <div class="row">
+            <p class="translate">Welcoming night surrounded me; lukewarm droplets fell.<br>I continued walking. I passed gentlemen<br>and derelicts wandering the streets alone.<br>I considered their fortunes, my misfortune.</p>
+            <p>Welcoming night surrounded me; lukewarm droplets fell.<br>I continued walking. I passed gentlemen<br>and derelicts wandering the streets alone.<br>I considered their fortunes, my misfortune.</p>
+            </div>
+            <div class="row">
+            <p class="translate">Reviewing various past incidents<br>(lost love, women discarded,<br>my old residences, careers, comrades)<br>I walked past mysterious alleys to<br>suddenly arrive at Blackwood's Bookshop.<br>Dignified bookworms searched stacks of inviting paperbacks.<br>And then, suddenly, my stare met hers.</p>
+            <p>Reviewing various past incidents<br>(lost love, women discarded,<br>my old residences, careers, comrades)<br>I walked past mysterious alleys to<br>suddenly arrive at Blackwood's Bookshop.<br>Dignified bookworms searched stacks of inviting paperbacks.<br>And then, suddenly, my stare met hers.</p>
+            </div>
+            <div class="row">
+            <p class="translate">"Um ... I ... I ..."<br>"Quickly, sweetheart, softly! Outside!"</p>
+            <p>"Um ... I ... I ..."<br>"Quickly, sweetheart, softly! Outside!"</p>
+            </div>
+            <div class="row">
+            <p class="translate">Strangely enjoying it, I went,<br>somewhat bewildered although surely happy.<br>I sat so silently as she approached.<br>Coming closer, then bending delicately alongside,<br>she tenderly said,</p>
+            <p>Strangely enjoying it, I went,<br>somewhat bewildered although surely happy.<br>I sat so silently as she approached.<br>Coming closer, then bending delicately alongside,<br>she tenderly said,</p>
+            </div>
+            <div class="row">
+            <p class="translate">This strong, pronounced technique which style constrains<br>Shall delegate to me, now I believe,<br>An earth for loves unleashed like hurricanes;<br>Herewith I do innately this perceive.</p>
+            <p>This strong, pronounced technique which style constrains<br>Shall delegate to me, now I believe,<br>An earth for loves unleashed like hurricanes;<br>Herewith I do innately this perceive.</p>
+            </div>
+            <div class="row">
+            <p class="translate">"I ... I ...," I giddily said again, resembling an absolute fool.<br>I spluttered, "I'm awfully ridiculous.<br>I apologize for babbling again."<br>So I (a blithering idiot) spoke, while everybody stared.</p>
+            <p>"I ... I ...," I giddily said again, resembling an absolute fool.<br>I spluttered, "I'm awfully ridiculous.<br>I apologize for babbling again."<br>So I (a blithering idiot) spoke, while everybody stared.</p>
+            </div>
+            <div class="row">
+            <p class="translate">"Hush, hush! Listen up! Go instantly home.<br>Remember important stuff:<br>Love, integrity, art, literature," she lectured.</p>
+            <p>"Hush, hush! Listen up! Go instantly home.<br>Remember important stuff:<br>Love, integrity, art, literature," she lectured.</p>
+            </div>
+            <div class="row">
+            <p class="translate">I entreated softly, "Your name is ...?"<br>Suddenly, silently, a driverless limousine stopped,<br>doors neatly marked "Muses Unlimited."<br>She was gone.</p>
+            <p>I entreated softly, "Your name is ...?"<br>Suddenly, silently, a driverless limousine stopped,<br>doors neatly marked "Muses Unlimited."<br>She was gone.</p><br>
+        </div>
 
-                replaceWordsWithLength(paragraph);
+
+            <!-- <p>For a time I stood, relishing my autumn night.<br>Amy hated wordless nighttime walking intensely<br>and so had strutted home dourly.<br>"I'm rather cold," she had muttered, "and so ... goodbye."<br><br>Welcoming night surrounded me; lukewarm droplets fell.<br>I continued walking. I passed gentlemen<br>and derelicts wandering the streets alone.<br>I considered their fortunes, my misfortune.<br><br>Reviewing various past incidents<br>(lost love, women discarded,<br>my old residences, careers, comrades)<br>I walked past mysterious alleys to<br>suddenly arrive at Blackwood's Bookshop.<br>Dignified bookworms searched stacks of inviting paperbacks.<br>And then, suddenly, my stare met hers.<br><br>"Um ... I ... I ..."<br>"Quickly, sweetheart, softly! Outside!"<br><br>Strangely enjoying it, I went,<br>somewhat bewildered although surely happy.<br>I sat so silently as she approached.<br>Coming closer, then bending delicately alongside,<br>she tenderly said,<br><br>This strong, pronounced technique which style constrains<br>Shall delegate to me, now I believe,<br>An earth for loves unleashed like hurricanes;<br>Herewith I do innately this perceive.<br><br>"I ... I ...," I giddily said again, resembling an absolute fool.<br>I spluttered, "I'm awfully ridiculous.<br>I apologize for babbling again."<br>So I (a blithering idiot) spoke, while everybody stared.<br><br>"Hush, hush! Listen up! Go instantly home.<br>Remember important stuff:<br>Love, integrity, art, literature," she lectured.<br><br>I entreated softly, "Your name is ...?"<br>Suddenly, silently, a driverless limousine stopped,<br>doors neatly marked "Muses Unlimited."<br>She was gone.</p> -->
+            <script>
+                // get all elements with the class "translated"
+                const paragraphs = document.getElementsByClassName("translate");
+                // loop through each paragraph
+                Array.from(paragraphs).forEach(paragraph => {
+                  const replaceWordsWithLength = (node) => {
+                    if (node.nodeType === Node.TEXT_NODE) {
+                      // process text only
+                      const words = node.nodeValue.split(" ");
+                      const processed = words
+                        .map(word => {
+                          const cleanedWord = word.replace(/[^a-zA-Z0-9]/g, ""); // remove punctuation
+                          return cleanedWord.length; // get the word's length
+                        })
+                        .filter(length => length !== 0) // remove words with length 0
+                        .map(length => length === 10 ? 0 : length); // replace length 10 with 0
+                      node.nodeValue = processed.join(" ");
+                    } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== "BR") {
+                      // recursively process child nodes
+                      node.childNodes.forEach(replaceWordsWithLength);
+                    }
+                  };
+              
+                  replaceWordsWithLength(paragraph); // Apply the function to the current paragraph
+                });
               </script></div>
             <hr style="border: 1px dotted black; width: 100%; margin: 10px 0; text-align: left;">
             <h5>"Bemused" by Mike Keith</h5>  
