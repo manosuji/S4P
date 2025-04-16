@@ -91,13 +91,18 @@ a:active {
     text-transform: uppercase;
 }
 
-#eunoia {
+#a:hover, #i:hover, #o:hover, #u:hover {
     color: white;
 }
+
 #e {
-    color: black;
+    color: white;
     padding: 15px;
     background-color: black;
+}
+
+#e:hover {
+    color:black;
 }
 
 /* photo spacing */
