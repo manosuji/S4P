@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'raritas';
-  src: url('../assets/raritas.otf')
+  src: url('./assets/raritas.otf')
 }
 
 body {
@@ -9,7 +9,7 @@ body {
 
 @font-face {
   font-family: 'stars';
-  src: url('../assets/star_ornaments.otf')
+  src: url('./assets/star_ornaments.otf')
 }
 
 body {
