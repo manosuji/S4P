@@ -31,6 +31,10 @@ body {
     max-width: 700px;
 }
 
+.subsection.wide {
+    max-width: 900px;
+}
+
 .subheading {
     text-align: center;
 }
@@ -106,10 +110,24 @@ a:active {
 }
 
 .bemused {
-    display: flex;
-    width: max-content;
-    gap: 30px;
-}
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 20px;
+  }
+  
+  .row {
+    display: contents; /* Removes the row container's visual impact, passing items directly into the grid */
+  }
+  
+  .translate {
+    margin: 0; /* Removes default margins */
+    text-align: left; /* Aligns the text in the left column */
+  }
+  
+  .row p:not(.translate) {
+    margin: 0; /* Removes default margins */
+  }
 
 /* photo spacing */
 
