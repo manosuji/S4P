@@ -67,13 +67,13 @@ body {
 /* what do links look like */
 
 a {
-    color: blue;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: yellowgreen;
+    color: blue;
     text-decoration: underline;
 }
 
@@ -82,7 +82,7 @@ a:visited {
 }
 
 a:active {
-    color: orange;
+    color: yellowgreen;
 }
 
 /* specific styling */
@@ -202,6 +202,7 @@ a:active {
 .vowels {
     width: 200px;
     margin-left: 30px;
+    padding: 50px 30px 50px 20px
 }
 .vowels:hover {
     content: url('./assets/vowels_crossed.png');
@@ -217,6 +218,10 @@ a:active {
 
 .book {
     width: 250px;
+}
+
+.pie {
+    width:200px;
 }
 
 /* for buttons that link at top and bottom of page */
