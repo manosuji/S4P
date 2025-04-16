@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>lipogram</title>
+  </head>
+    <body>
+      <img class="letra one" src="./assets/letra.png">
+      <img class="letra two" src="./assets/letra.png">
+      <img class="letra three" src="./assets/letra.png">
+      <div class="header"><a href="./index.html">back</a></div>
+        <div class="subsection" id="top">
+            <p class="subheading"><em>univocalic</em></p>
+            <p class="callout">better only use one vowel.</p>
+            <!-- eunoia by christian bök -->
+            <div class="content" id="eunoia">
+            <p id="a">
+                Chapter A.<br><br>
+                <em>for Hans Arp</em><br><br><br>
+                Awkward grammar appals a craftsman. A Dada bard as daft as Tzara damns stagnant art and scrawls an alpha (a slapdash arc and a backward zag) that mars all stanzas and jams all ballads (what a scandal). A madcap vandal crafts a small black ankh - a hand-stamp that can stamp a wax pad and at last plant a mark that sparks an ars magna (an abstract art that charts a phrasal anagram). A pagan skald chants a dark saga (a Mahabharata), as a papal cabal blackballs all annals and tracts, all dramas and psalms: Kant and Kafka, Marx and Marat. A law as harsh as a fatwa bans all paragraphs that lack an A as a standard hallmark.
+            </p>
+
+            <p id="e">
+                Chapter E.<br><br>
+                <em>for René Crevel</em><br><br><br>
+                Enfettered, these sentences repress free speech. The text deletes selected letters. We see the revered exegete reject metred verse: the sestet, the tercet - even les scènes élevées en grec. He rebels. He sets new precedents. He lets cleverness exceed decent levels. He eschews the esteemed genres, the expected themes - even les belles lettres en vers. He prefers the perverse French esthetes: Verne, Péret, Genet, Perec - hence, he pens fervent screeds, then enters the street, where he sells these letterpress newsletters, three cents per sheet. He engenders perfect newness wherever we need fresh terms.
+            </p>
+            
+            <p id="i">
+                Chapter I.<br><br>
+                <em>for Dick Higgins</em><br><br><br>
+                Writing
+                is inhibiting.
+                Sighing, I sit,
+                scribbling in ink this pidgin script.
+                I sing with nihilistic witticism, disciplining
+                signs with trifling gimmicks—impish hijinks which highlight stick sigils.
+                
+                Isn't it glib?
+                Isn't it chic?
+                
+                I fit childish insights within rigid limits, writing shtick which might instill priggish misgivings in critics blind with hindsight. I dismiss nitpicking criticism which flirts with philistinism. I bitch; I kibitz—griping whilst criticizing dimwits, sniping whilst indicting nitwits, dismissing simplistic thinking, in which philippic wit is still illicit.        
+            </p>
+
+            <p id="o">
+                Chapter O.<br><br>
+                <em>for Yoko Ono</em><br><br><br>
+                Loops on bold fonts now form lots of words for books. Books form cocoons of comfort - tombs to hold book-worms. Profs from Oxford show frosh who do post-docs how to gloss works of Wordsworth. Dons who work for proctors or provosts do not fob off school to work on crosswords, nor do dons go off to dorm rooms to loll on cots. Dons go crosstown to look for bookshops known to stock lots of top-notch goods: cookbooks, workbooks - room on room of how-to books for jocks (how to jog, how to box), books on pro sports: golf or polo. Old colophons on schoolbooks from schoolrooms sport two sorts of logo: oblong whorls, rococo scrolls - both on worn morocco.
+            </p>
+
+            <p id="u">
+                Chapter U.<br><br>
+                <em>for Zhu Yu</em><br><br><br>
+                Kultur spurns Ubu - thus Ubu pulls stunts. Ubu shuns Skulptur: Uruk urns (plus busts), Zulu jugs (plus tusks). Ubu sculpts junk für Kunst und Glück. Ubu busks. Ubu drums drums, plus Ubu strums cruths (such hubbub, such ruckus): thump, thump; thrum, thrum. Ubu puns puns. Ubu blurts untruth: much bunkum (plus bull), much humbug (plus bunk) - but trustful schmucks trust such untruthful stuff; thus Ubu (cult guru) must bluff dumbstruck numbskulls (such chumps). Ubu mulcts surplus funds (trust funds plus slush funds). Ubu usurps much usufruct.
+                Ubu sums up lump sums. Ubu trumps dumb luck.
+            </p>
+
+        <script>
+            const paragraphA = document.getElementById("a");
+            paragraphA.innerHTML = paragraphA.innerHTML.replace(/a/g, '<span style="color: black;">a</span>');
+            paragraphA.innerHTML = paragraphA.innerHTML.replace(/A/g, '<span style="color: black;">A</span>');
+        </script>
+        <script>
+            const paragraphE = document.getElementById("e");
+            paragraphE.innerHTML = paragraphE.innerHTML.replace(/e/g, '<span style="color: white; background-color:black">e</span>');
+            paragraphE.innerHTML = paragraphE.innerHTML.replace(/é/g, '<span style="color: white;">é</span>');
+            paragraphE.innerHTML = paragraphE.innerHTML.replace(/è/g, '<span style="color: white;">è</span>');
+            paragraphE.innerHTML = paragraphE.innerHTML.replace(/E/g, '<span style="color: white;">E</span>');
+        </script>
+        <script>
+            const paragraphI = document.getElementById("i");
+            paragraphI.innerHTML = paragraphI.innerHTML.replace(/i/g, '<span style="color: tomato;">i</span>');
+            paragraphI.innerHTML = paragraphI.innerHTML.replace(/I/g, '<span style="color: tomato;">I</span>');
+        </script>
+        <script>
+            const paragraphO = document.getElementById("o");
+            paragraphO.innerHTML = paragraphO.innerHTML.replace(/o/g, '<span style="color: deepskyblue;">o</span>');
+            paragraphO.innerHTML = paragraphO.innerHTML.replace(/O/g, '<span style="color: deepskyblue;">O</span>');
+        </script>
+        <script>
+            const paragraphU = document.getElementById("u");
+            paragraphU.innerHTML = paragraphU.innerHTML.replace(/u/g, '<span style="color: forestgreen;">u</span>');
+            paragraphU.innerHTML = paragraphU.innerHTML.replace(/U/g, '<span style="color: forestgreen;">U</span>');
+        </script>
+
+        </div></div>
+        <div class="footer">
+        <a href="#top">top</a>
+        <a href="./index.html">back</a>
+        </div>
+    </body>
+</html>
