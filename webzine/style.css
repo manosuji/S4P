@@ -20,11 +20,11 @@ body {
     margin-bottom: auto;
 }
 
-/* defines components of a section */
+/* defines what different levels of text look like */
 .subtitle {
-    
     max-width: 650px;
     line-height: 1.5em;
+    display: flex;
 }
 
 .subsection {
@@ -35,7 +35,6 @@ body {
     text-align: center;
 }
 
-/* for content within a subsection */
 .content {
     display:flex;
     flex-wrap: wrap;
@@ -61,19 +60,49 @@ body {
     margin: auto;
 }
 
+/* what does main image gallery do */
 
-/* to flip a callout card */
-.callout.flip {
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* what do links look like */
+
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: orange;
+}
+
+/* to make something flippable */
+.flip {
     transition: transform 0.8s;
     transform-origin: center;
 }
-.callout.flip:hover {
+.flip:hover {
     transform: rotateY(180deg);
   }
 
 /* for photos which dance side to side */
 .flicker-photo {
     width: 350px;
+    margin:15px;
     animation: flickerRotate 1.25s steps(1) infinite;
 }
 
@@ -91,8 +120,20 @@ body {
 
 .flicker-photo.ella {
     width: 200px;
-    margin:15px;
+    /* border-style: dotted;
+    border-color: black; */
 }
+
+/* adjust size and positioning of car png */
+
+.car {
+    width: 300px;
+    transform: rotate(10deg);
+    /* border-style: dotted;
+    border-color: black; */
+}
+
+/* for buttons that link at top and bottom of page */
 
 .header {
     text-align: left;
