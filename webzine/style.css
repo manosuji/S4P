@@ -94,6 +94,10 @@ a:active {
     letter-spacing: .2rem;
     text-transform: uppercase;
 }
+.pal {
+    align-items: center;
+    justify-content: center;
+}
 
 #a:hover, #i:hover, #o:hover, #u:hover {
     color: white;
@@ -202,6 +206,10 @@ a:active {
 
 .weird-al {
     width: 350px;
+    float:left;
+}
+.weird-al:hover {
+    border: none;
 }
 
 .ella {
@@ -305,6 +313,12 @@ middle one goes left, bottom one moves up slightly */
 @media only screen and (min-width: 768px) {
     .letra.three {
         bottom: -8%;
+    }
+}
+
+@media (max-width: 630px) {
+    .bob {
+        font-size: 16px;
     }
 }
 
