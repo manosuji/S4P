@@ -43,6 +43,9 @@ body {
     display:flex;
     flex-wrap: wrap;
 }
+.content.center {
+    justify-content: center;
+}
 
 /* what does a callout card look like */
 .callout {
@@ -253,6 +256,10 @@ a:active {
 
 .pie {
     width:200px;
+}
+
+.chief {
+    width:150px;
 }
 
 /* for buttons that link at top and bottom of page */
