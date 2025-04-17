@@ -256,10 +256,12 @@ a:active {
 
 .pie {
     width:200px;
+    margin-left: 50px;
 }
 
 .chief {
     width:150px;
+    margin-left: 50px;
 }
 
 /* for buttons that link at top and bottom of page */
