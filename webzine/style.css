@@ -61,6 +61,21 @@ body {
     margin: auto;
 }
 
+/* what does a button look like */
+
+.big-button {
+    font-family: serif;
+    font-size: 100px;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+}
+
+.big-button:hover {
+    color: white;
+    background-color: blue;
+}
+
 /* what does main image gallery do */
 
 .gallery {
@@ -290,14 +305,14 @@ a:active {
     top: 5%;
     right: 5%;
     transform: rotate(20deg);
-    max-width: 10%;
+    max-width: 20%;
 }
 
 .letra.two {
     top: 42%;
     left: -5%;
     transform: rotate(120deg);
-    max-width: 10%;
+    max-width: 20%;
     float:left;
     margin:10px
 }
@@ -305,7 +320,7 @@ a:active {
 .letra.three {
     bottom: 3%;
     right: -2%;
-    max-width: 10%;
+    max-width: 20%;
     transform: rotate(50deg);
 }
 
@@ -344,5 +359,8 @@ middle one goes left, bottom one moves up slightly */
     }
     .photo {
         margin: 0px 25px 50px 25px;
+    }
+    .big-button {
+        font-size: 50px;
     }
 }
