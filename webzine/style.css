@@ -57,7 +57,7 @@ body {
 #title-image {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: relative;
     z-index: -1;
     /* transform-origin: right; */
     /* transform: rotate(-60deg); */
