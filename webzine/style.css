@@ -6,7 +6,6 @@
 body {
     /* background-color: #fffff0; */
     font-size: 26px;
-    margin-left: 5%;
 }
 
 /* what does the title text look like */
@@ -20,6 +19,57 @@ body {
     margin-bottom: auto;
 }
 
+#boundary {
+    width: 100vw;
+    height: 100vh;
+    border: 1px dotted black;
+    overflow: hidden;
+}
+
+#draggable-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 20px;
+    font-size: 500px;
+    font-weight: bold;
+    cursor: grab;
+    user-select: none;
+    font-family: avara-bold;
+}
+
+#draggable-box:hover {
+    color: blue;
+}
+
+#title-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.letter {
+    position: absolute;
+    font-size: 30vw;
+    font-family: avara-bold;
+}
+
+#title-image {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    /* transform-origin: right; */
+    /* transform: rotate(-60deg); */
+    /* border-style: dashed; */
+}
+
+.options {
+    position: absolute;
+    top:10%;
+    left: 5%;
+}
+  
 /* defines what different levels of text look like */
 .subtitle {
     max-width: 650px;
@@ -29,6 +79,11 @@ body {
 
 .subsection {
     max-width: 700px;
+    margin: 0 auto; /* Centers the subsection horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Keeps text left-aligned */
+    text-align: left; /* Ensures text stays left-aligned */
 }
 
 .subsection.wide {
@@ -36,7 +91,9 @@ body {
 }
 
 .subheading {
-    text-align: center;
+    text-align: center; /* Centers the subheading text */
+    width: 100%; /* Ensures full-width alignment */
+    margin-bottom: 10px; /* Adds spacing below */
 }
 
 .content {
@@ -100,7 +157,7 @@ a:hover {
 }
 
 a:visited {
-    color: purple;
+    color: yellowgreen;
 }
 
 a:active {
@@ -285,6 +342,7 @@ a:active {
 .header {
     text-align: left;
     margin-top: 5%;
+    margin-left: 5%;
 }
 
 .footer {
@@ -303,9 +361,9 @@ a:active {
 }
 
 .letra.one {
-    top: 5%;
-    right: 5%;
-    transform: rotate(20deg);
+    top: -20%;
+    right: 15%;
+    transform: rotate(280deg);
     max-width: 20%;
 }
 
@@ -328,10 +386,10 @@ a:active {
 /* shoves letra images around if screen is small
 middle one goes left, bottom one moves up slightly */
 @media only screen and (min-width: 768px) {
-    .letra.two {
+    /* .letra.two {
         left: auto;
         right: 18%;
-    }
+    } */
 }
 
 @media only screen and (min-width: 768px) {
