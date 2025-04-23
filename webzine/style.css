@@ -65,10 +65,14 @@ body {
     /* border-style: dashed; */
 }
 
-.options {
-    position: absolute;
-    top:10%;
+#arrow-up {
+    position: fixed;
+    top:5%;
     left: 5%;
+}
+
+iframe {
+    border:none
 }
 
 /* defines what different levels of text look like */
@@ -125,12 +129,15 @@ body {
 
 /* what does a button look like */
 
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
 .big-button {
     font-family: serif;
     font-size: 25px;
-    position: relative;
-    top: 50%;
-    left: 38%;
 }
 
 .big-button:hover {
@@ -151,9 +158,14 @@ body {
 /* what do links look like */
 
 a {
-    color: black;
+    color: yellowgreen;
     text-decoration: none;
     font-weight: bold;
+}
+
+a[href^="#"]:hover {
+    color: blue;
+    text-decoration: none;
 }
 
 a:hover {
@@ -181,14 +193,6 @@ a:active {
 
 .section {
     padding: 50px;
-}
-
-#lipogram {
-    border-top: 2px dashed black;
-    border-bottom: 2px dashed black;
-}
-
-#palindrome {
     border-bottom: 2px dashed black;
 }
 
@@ -341,6 +345,13 @@ a:active {
 
 .angrydog {
     max-width:900px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    cursor: grab;
+}
+
+.angrydog:hover {
+    opacity: 0.5;
 }
 
 .book {
