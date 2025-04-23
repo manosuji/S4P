@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'raritas';
+  src: url('../../starlike/assets/raritas.otf')
+}
+
+body {
+  font-family: 'raritas', sans-serif;
+}
+
+@font-face {
+  font-family: 'stars';
+  src: url('../../starlike/assets/star_ornaments.otf')
+}
+
+body {
+  font-family: 'stars', sans-serif;
+}
