@@ -69,7 +69,34 @@ body {
     top:10%;
     left: 5%;
 }
-  
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.flashing-text {
+    animation: blink 1.5s infinite;
+}
+
+#scroll-call {
+    color: yellowgreen;
+    font-weight: bold;
+    position: absolute;
+    bottom:38%;
+    right: 18%;
+}
+
+
 /* defines what different levels of text look like */
 .subtitle {
     max-width: 650px;
