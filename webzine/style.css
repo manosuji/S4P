@@ -6,6 +6,7 @@
 body {
     /* background-color: #fffff0; */
     font-size: 26px;
+    width: 100vw
 }
 
 /* what does the title text look like */
@@ -70,38 +71,14 @@ body {
     left: 5%;
 }
 
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.flashing-text {
-    animation: blink 1.5s infinite;
-}
-
-#scroll-call {
-    color: yellowgreen;
-    font-weight: bold;
-    position: absolute;
-    bottom:38%;
-    right: 18%;
-}
-
-
 /* defines what different levels of text look like */
 .subtitle {
     max-width: 650px;
     line-height: 1.5em;
     display: flex;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .subsection {
@@ -129,6 +106,7 @@ body {
 }
 .content.center {
     justify-content: center;
+    text-align: center;
 }
 
 /* what does a callout card look like */
@@ -149,10 +127,10 @@ body {
 
 .big-button {
     font-family: serif;
-    font-size: 75px;
-    position: fixed;
+    font-size: 25px;
+    position: relative;
     top: 50%;
-    left: 10%;
+    left: 38%;
 }
 
 .big-button:hover {
@@ -200,6 +178,21 @@ a:active {
     align-items: center;
     justify-content: center;
 }
+
+.section {
+    padding: 50px;
+}
+
+#lipogram {
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+}
+
+#palindrome {
+    border-bottom: 2px dashed black;
+}
+
+/* univocalic poem styling */
 
 #a:hover, #i:hover, #o:hover, #u:hover {
     color: white;
