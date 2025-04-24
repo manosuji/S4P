@@ -133,7 +133,7 @@
         <div><img id="toggle-button" src="./assets/play.png" alt="Play/Pause Button" width="15"></div>
       </div>
       
-      <div class="author-credit"><p>The Angriest Dog in the World, David Lynch</p></div>
+      <div class="author-credit"><p>(The Angriest Dog in the World, David Lynch)</p></div>
       </div><br>
     <script>
       const images = ["./assets/angrydog/02.jpg", "./assets/angrydog/03.jpg", "./assets/angrydog/04.jpg", "./assets/angrydog/05.jpg", "./assets/angrydog/06.jpg", "./assets/angrydog/07.jpg", "./assets/angrydog/08.jpg", "./assets/angrydog/09.jpg", "./assets/angrydog/10.jpg", "./assets/angrydog/11.jpg", "./assets/angrydog/12.jpg", "./assets/angrydog/13.jpg", "./assets/angrydog/14.jpg", "./assets/angrydog/15.jpg", "./assets/angrydog/16.jpg", "./assets/angrydog/17.jpg", "./assets/angrydog/18.jpg", "./assets/angrydog/19.jpg", "./assets/angrydog/20.jpg"]; 
@@ -177,7 +177,7 @@
     <div id = "pilish" class="section">
       <div class="subsection wide">
       <p class="subheading"><em>pilish</em></p>
-      <p class="callout">3.14...yada yada yada</p>
+      <p class="callout">the lengths of successive words must correlate with the digits of &#960;. The first word is 3 letters, the second is 1, the third is 4, and so on.</p>
       <br><br>
       <div class="bemused">
       <div class="row">
@@ -245,20 +245,20 @@
             replaceWordsWithLength(paragraph); // Apply the function to the current paragraph
           });
         </script></div>
-      <hr style="border: 1px dotted black; width: 100%; margin: 10px 0; text-align: left;">
-      <h5>"Bemused" by Mike Keith</h5>  
-      <!-- http://www.cadaeic.net/bemused.htm -->
-    </div></div>
+    </div><p class="author-credit">("Bemused," Mike Keith)</p>
+    </div>
   
     <div id="blackout" class="section">
       <p class="subheading"><em>blackout</em></p>
+      <p class="callout">a piece of pre-existing text is redacted in order to form a new poem; words of the source piece are covered up and the words that remain uncovered form a new text.</p>
       <iframe src="./blackout/blackout.html" width="100%" height="800px" scrolling="no"></iframe>
+      <p class="author-credit">"breath and light," mandy osuji, (starlike)</p>
     </div>
 
     <div id="palindrome" class="section">
       <div class="subsection wide">
         <p class="subheading"><em>the palindrome</em></p>
-        <p class="callout">it's the same backward and forward!</p>
+        <p class="callout">a word or phrase that is identical whether read backward or forward.</p>
         <div class="content pal">
           <p class="bob">
             <br>
@@ -309,17 +309,23 @@
               God, a red nugget, a fat egg under a dog<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               Go hang a salami, I'm a lasagna hog
             </p>
-        </div></div></div>
+        </div>
+        <p class="author-credit">("Bob", Weird Al Yankovich)</p>
+      </div></div>
 
     <div id="sonnets" class="section">
+      <p class="subheading">combinatory sonnets</p>
+      <p class="callout">a sonnet itself is a constrained form: it demands certain meter, length and rhyme. Queneau took it one step further and wrote 10 sonnets such that any lines from a sonnet can be combined with any from the nine others, allowing for 100,000,000,000,000 different poems.</p><br>
       <div class="content center">
       <iframe src="https://x42.com/active/queneau.html?p=40290199843318&l=fr&n=New+Poem" width="400px" height="500px" scrolling="no"></iframe> 
-    </div></div>
+    </div>
+    <br><p class="author-credit">A Hundred Thousand Billion Poems, Raymond Queneau</p>
+  </div>
 
     <div id="univocalic" class="section"> 
         <div class="subsection">
         <p class="subheading"><em>univocalic</em></p>
-        <p class="callout">better only use one vowel.</p>
+        <p class="callout">only one vowel is allowed to be used.</p>
         <!-- eunoia by christian bök -->
         <div class="content" id="eunoia">
         <p id="a">
@@ -392,18 +398,12 @@
     </script>
     </div></div></div>
 
-    <!-- <div id="diastic" class="section">
-      <div class="content center">
-      <iframe src="http://www.eddeaddad.net/eDiastic/" width="100%" height="850px" scrolling="yes"></iframe> 
-    </div></div> -->
-
     <div id="cfg" class="section">
-      <div class="button-container">
-      <button class="big-button" onclick="displayExpression()">CLICKCLICKCLICK</button>
-      </div><br>
-      <div class="subsection wide">
-      <p id="expression-output"></p></div>
-
+      <p class="subheading"><em>context-free grammar</em></p>
+      <p class="callout">this is a rule system that specifies how items can be combined to form valid sentences in a language. below, these rules are picked at random to generate text that is constrained by the defined grammar.</p><br>
+      <div class="button-container"><button class="big-button" onclick="displayExpression()">CLICKCLICKCLICK</button></div>
+      <p id="expression-output"></p>
+    <br>
       <script>
           const grammar = {
               S: [
@@ -479,18 +479,23 @@
       const output = document.getElementById("expression-output");
       output.innerHTML += generatedExpression + ".<br>";
       }
-      </script></div></div>
+      </script></div>
 
     <div id="collage" class="section">
+      <p class="subheading"><em><a href="https://www.metmuseum.org/art/collection/search/353770" style="color: black; font-weight: normal;">collage</a></em></p>
+      <p class="callout">Matisse cut directly into sheets of paper, then arranged the cutouts in stunning compositions.</p>
       <div class="content center">
-      <img class="big-image" src="./assets/mattise1.png">
-      <img class="big-image" src="./assets/mattise2.png">
-    </div></div>
+        <img class="big-image" src="./assets/mattise1.png">
+        <br><p class="author-credit">The Horse, the Rider, and the Clown (Le Cheval, L'Écuyère et Le Clown), Plate V from Jazz, Henri Matisse</p>
+        <img class="big-image" src="./assets/mattise2.png">
+        <br><p class="author-credit">The Heart (Le Coeur), Plate VII from Jazz, Henri Matisse</p>
+      </div>
+  </div>
 
-    <div id="lipogram" class="section">
+    <div id="lipogram" class="section" style="border: none">
       <div class="subsection">
         <p class="subheading"><em>the lipogram</em></p>
-        <p class="callout">choose a letter to go without...</p>
+        <p class="callout">a letter is disallowed and cannot be used throughout the text.</p>
         <div class="content">
         <p>
             <br>If Youth, throughout all history, had had a champion to stand up for it; to show a doubting world that a child can think; and, possibly, do it practically, you wouldn't constantly run across folks today who claim that "a child don't know anything." A child's brain starts functioning at birth; and has, amongst its many infant convolutions, thousands of dormant atoms, into which God has put a mystic possibility for noticing an adult's act, and figuring out its purport.
@@ -503,9 +508,8 @@
             <br><br>Such a jolt to a young child's mind, craving instruction, is apt so to dull its avidity, as to hold it back in its school work. Try to look upon a child as a small, soft young body and a rapidly growing, constantly inquiring brain. It must grow to maturity slowly. Forcing a child through school by constant night study during hours in which it should run and play, can bring on insomnia; handicapping both brain and body.
             <br><br>Now this small town in our story had grown in just that way:—slowly; in fact, much too slowly to stand on a par with many a thousand of its kind in this big, vigorous nation of ours. It was simply...
         </p>
-        <hr style="border: 1px dotted black; width: 100%; margin: 10px 0; text-align: left;">
-        <h5>GADSBY: A Story of Over 50,000 Words Without Using the Letter "E" by Ernest Vincent Wright [Chapter 1, p. 10-12, excerpts]</h5>  
-      </div></div></div>
-
+      </div>
+      <p class="author-credit" style="text-align: center;">GADSBY: A Story of Over 50,000 Words Without Using the Letter "E" by Ernest Vincent Wright [Chapter 1, p. 10-12, excerpts]</p>
+    </div></div>
   </body>
 </html>
