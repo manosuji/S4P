@@ -89,7 +89,7 @@
     <div id="abecedarius" class="section">
       <div class="subsection">
       <p class="subheading"><em>abecedarius</em></p>
-      <p class="callout">follow that alphabet :)</p>
+      <p class="callout">every line must begin with the sequential next letter of the alphabet.</p>
       <div class="content">
           <!-- "A Poem for S." written by Jessica Greenbaum -->
       <p>
@@ -119,38 +119,50 @@
           <b>X</b>-ray return with good news, may we raise our&nbsp;&nbsp;/&nbsp;
           <b>Z</b>arfs to both your names in the Great Book of Life.
       </p>
-    </div></div></div>
+    </div>
+    <div class="author-credit"><p>(Jessica Greenbaum)</p></div>
+    </div></div>
 
     <div id="comic" class="section">
       <div class="subsection wide">
         <p class="subheading"><em>constrained comic</em></p>
-        <p class="callout">identical panels, infinite meaning</p>
-        <div class="content">
+        <p class="callout">the artist uses the same illustrations over and over, while changing only the dialogue to give a different shape to the story.</p>
+        <div class="content center">
         <br>
         <img id="displayed-image" class="big-image" src="./assets/angrydog/01.jpg" alt="Image">
-      </div></div><br>
+        <div><img id="toggle-button" src="./assets/play.png" alt="Play/Pause Button" width="15"></div>
+      </div>
+      
+      <div class="author-credit"><p>The Angriest Dog in the World, David Lynch</p></div>
+      </div><br>
     <script>
-      const images = ["./assets/angrydog/02.jpg", "./assets/angrydog/03.jpg", "./assets/angrydog/04.jpg", "./assets/angrydog/05.jpg", "./assets/angrydog/06.jpg", "./assets/angrydog/07.jpg", "./assets/angrydog/08.jpg", "./assets/angrydog/09.jpg", "./assets/angrydog/10.jpg", "./assets/angrydog/11.jpg", "./assets/angrydog/12.jpg", "./assets/angrydog/13.jpg", "./assets/angrydog/14.jpg", "./assets/angrydog/15.jpg", "./assets/angrydog/16.jpg", "./assets/angrydog/17.jpg", "./assets/angrydog/18.jpg", "./assets/angrydog/19.jpg", "./assets/angrydog/20.jpg", ]; // Add more images here
-      let currentIndex = 0;
+      const images = ["./assets/angrydog/02.jpg", "./assets/angrydog/03.jpg", "./assets/angrydog/04.jpg", "./assets/angrydog/05.jpg", "./assets/angrydog/06.jpg", "./assets/angrydog/07.jpg", "./assets/angrydog/08.jpg", "./assets/angrydog/09.jpg", "./assets/angrydog/10.jpg", "./assets/angrydog/11.jpg", "./assets/angrydog/12.jpg", "./assets/angrydog/13.jpg", "./assets/angrydog/14.jpg", "./assets/angrydog/15.jpg", "./assets/angrydog/16.jpg", "./assets/angrydog/17.jpg", "./assets/angrydog/18.jpg", "./assets/angrydog/19.jpg", "./assets/angrydog/20.jpg"]; 
 
+      let currentIndex = 0;
+      let interval;
+      const button = document.getElementById("toggle-button");
+
+      // Function to switch images
       function nextImage() {
-          currentIndex = (currentIndex + 1) % images.length; // Loops back when reaching the end
+          currentIndex = (currentIndex + 1) % images.length;
           document.getElementById("displayed-image").src = images[currentIndex];
       }
+
       function startCycling() {
-      interval = setInterval(nextImage, 500);
+          interval = setInterval(nextImage, 500);
+          button.src = "./assets/pause.png"; // change button image to pause
       }
 
-      // Stop cycling
       function stopCycling() {
           clearInterval(interval);
+          button.src = "./assets/play.png"; // chanve button image to play
       }
 
-      // Toggle cycling when the user clicks the image
-      document.getElementById("displayed-image").addEventListener("click", function() {
+      // toggle play/pause when clicking the image button
+      button.addEventListener("click", function() {
           if (interval) {
               stopCycling();
-              interval = null; // Reset interval so it knows it’s stopped
+              interval = null;
           } else {
               startCycling();
           }
@@ -158,6 +170,8 @@
 
       // Start cycling initially
       startCycling();
+
+
     </script></div>
 
     <div id = "pilish" class="section">
