@@ -20,23 +20,23 @@ you didn’t promise me anything
 just brown eyes breaching salt
 wick’d soft and yet to be lit
 the taste of fate in my mouth
-	there and then gone
+there and then gone
 again 
 the earth is singing into the night
-    that punishes like plastic kings
+that punishes like plastic kings
 the gauzy landscape 
-    sifts through filtered wine
+sifts through filtered wine
 shards of waning amber
 pooling melody and reverence
 time ribbons, enchants
 affrighted by the tender sigh of things
 bedded by the whims of memory
 when the flashes of 
-    reddened flesh come
+reddened flesh come
 they will bear witness to a steadying
 a breath of varying scope
 tethering me to the wind 
-    in all its chiming glory
+in all its chiming glory
 my ear held to the grass
 listening to every living thing
 holding their song in my head 
@@ -45,14 +45,14 @@ the wind gasps
 anointing me with breath
 my every inhale a hymn
 metered steps declare 
-    something triumphant
+something triumphant
 amongst the gathering frost
 these hands wrought miracle
 glass pulse all the same
 my fingers pry open moon
 and arrive at that which I cannot say
 even now, I won’t taint this ground
-	with mention of ghosts
+with mention of ghosts
 I will say my own name
 whisper it into the undergrowth
 cup this flame against
@@ -71,7 +71,7 @@ let default_font = "stars";
 let mouse_font = "raritas";
 let maxLineWidth; // Fixed width for lines
 let lineHeight = txtSize * 1.2; // Space between lines
-let hoverDuration = 8000; // Time (in milliseconds) to keep font changed
+let hoverDuration = 5000; // Time (in milliseconds) to keep font changed
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
