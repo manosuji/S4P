@@ -257,7 +257,7 @@
 
     <div id="sonnets" class="section">
       <div class="content center">
-      <iframe src="http://www.bevrowe.info/Internet/Queneau/Queneau.html" width="80%" height="500px" scrolling="no"></iframe> 
+      <iframe src="https://x42.com/active/queneau.html?p=40290199843318&l=fr&n=New+Poem" width="400px" height="500px" scrolling="no"></iframe> 
     </div></div>
     
     <div id = "pilish" class="section">
@@ -335,6 +335,62 @@
       <h5>"Bemused" by Mike Keith</h5>  
       <!-- http://www.cadaeic.net/bemused.htm -->
     </div></div>
+
+
+
+    <div id="stopmotion" class="section">
+      <div class="subsection">
+      <p class="subheading"><em>stopmotion</em></p>
+      <p class="callout">just images?</p><br>
+      <div class="content center">
+      <p>
+          <video controls>
+              <source src="./assets/sushi_scene.mp4" type="video/mp4">
+            something's wrong and we can't load the video :(
+            </video>
+      </p>
+      <hr style="border: 1px dotted black; width: 100%; margin: 10px 0; text-align: left;">
+      <h5><em>Isle of Dogs</em> (2018)</h5>
+    </div></div></div>
+
+    <div id="comic" class="section">
+      <div class="subsection wide">
+        <p class="subheading"><em>constrained comic</em></p>
+        <p class="callout">identical panels, infinite meaning</p>
+        <div class="content">
+        <br>
+        <img id="displayed-image" class="angrydog" src="./assets/angrydog/01.jpg" alt="Image">
+      </div></div><br>
+    <script>
+      const images = ["./assets/angrydog/02.jpg", "./assets/angrydog/03.jpg", "./assets/angrydog/04.jpg", "./assets/angrydog/05.jpg", "./assets/angrydog/06.jpg", "./assets/angrydog/07.jpg", "./assets/angrydog/08.jpg", "./assets/angrydog/09.jpg", "./assets/angrydog/10.jpg", "./assets/angrydog/11.jpg", "./assets/angrydog/12.jpg", "./assets/angrydog/13.jpg", "./assets/angrydog/14.jpg", "./assets/angrydog/15.jpg", "./assets/angrydog/16.jpg", "./assets/angrydog/17.jpg", "./assets/angrydog/18.jpg", "./assets/angrydog/19.jpg", "./assets/angrydog/20.jpg", ]; // Add more images here
+      let currentIndex = 0;
+
+      function nextImage() {
+          currentIndex = (currentIndex + 1) % images.length; // Loops back when reaching the end
+          document.getElementById("displayed-image").src = images[currentIndex];
+      }
+      function startCycling() {
+      interval = setInterval(nextImage, 500);
+      }
+
+      // Stop cycling
+      function stopCycling() {
+          clearInterval(interval);
+      }
+
+      // Toggle cycling when the user clicks the image
+      document.getElementById("displayed-image").addEventListener("click", function() {
+          if (interval) {
+              stopCycling();
+              interval = null; // Reset interval so it knows it’s stopped
+          } else {
+              startCycling();
+          }
+      });
+
+      // Start cycling initially
+      startCycling();
+    </script></div>
 
     <div id="cfg" class="section">
       <div class="button-container">
@@ -419,62 +475,6 @@
       output.innerHTML += generatedExpression + ".<br>";
       }
       </script></div></div>
-
-    <div id="stopmotion" class="section">
-      <div class="subsection">
-      <p class="subheading"><em>stopmotion</em></p>
-      <p class="callout">just images?</p><br>
-      <div class="content center">
-      <p>
-          <video controls>
-              <source src="./assets/sushi_scene.mp4" type="video/mp4">
-            something's wrong and we can't load the video :(
-            </video>
-      </p>
-      <hr style="border: 1px dotted black; width: 100%; margin: 10px 0; text-align: left;">
-      <h5><em>Isle of Dogs</em> (2018)</h5>
-    </div></div></div>
-
-    <div id="comic" class="section">
-      <div class="subsection wide">
-        <p class="subheading"><em>constrained comic</em></p>
-        <p class="callout">identical panels, infinite meaning</p>
-        <div class="content">
-        <br>
-        <img id="displayed-image" class="angrydog" src="./assets/angrydog/01.jpg" alt="Image">
-      </div></div><br>
-    <script>
-      const images = ["./assets/angrydog/02.jpg", "./assets/angrydog/03.jpg", "./assets/angrydog/04.jpg", "./assets/angrydog/05.jpg", "./assets/angrydog/06.jpg", "./assets/angrydog/07.jpg", "./assets/angrydog/08.jpg", "./assets/angrydog/09.jpg", "./assets/angrydog/10.jpg", "./assets/angrydog/11.jpg", "./assets/angrydog/12.jpg", "./assets/angrydog/13.jpg", "./assets/angrydog/14.jpg", "./assets/angrydog/15.jpg", "./assets/angrydog/16.jpg", "./assets/angrydog/17.jpg", "./assets/angrydog/18.jpg", "./assets/angrydog/19.jpg", "./assets/angrydog/20.jpg", ]; // Add more images here
-      let currentIndex = 0;
-
-      function nextImage() {
-          currentIndex = (currentIndex + 1) % images.length; // Loops back when reaching the end
-          document.getElementById("displayed-image").src = images[currentIndex];
-      }
-      function startCycling() {
-      interval = setInterval(nextImage, 500);
-      }
-
-      // Stop cycling
-      function stopCycling() {
-          clearInterval(interval);
-      }
-
-      // Toggle cycling when the user clicks the image
-      document.getElementById("displayed-image").addEventListener("click", function() {
-          if (interval) {
-              stopCycling();
-              interval = null; // Reset interval so it knows it’s stopped
-          } else {
-              startCycling();
-          }
-      });
-
-      // Start cycling initially
-      startCycling();
-    </script></div>
-
-
 
 
   </body>
