@@ -137,7 +137,7 @@ iframe {
 
 .big-button {
     font-family: serif;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .big-button:hover {
@@ -195,6 +195,7 @@ a:active {
     padding: 50px;
     border-bottom: 2px dashed black;
 }
+
 
 /* univocalic poem styling */
 
@@ -435,7 +436,7 @@ middle one goes left, bottom one moves up slightly */
     }
 }
 
-/* makes body text smaller for small screens */
+/* changes for small screens */
 @media (max-width: 535px) {
     body {
         font-size: 20px;
@@ -450,7 +451,7 @@ middle one goes left, bottom one moves up slightly */
     .photo {
         margin: 0px 25px 50px 25px;
     }
-    .big-button {
-        font-size: 50px;
+    .angrydog {
+        max-width: 400px;
     }
 }
