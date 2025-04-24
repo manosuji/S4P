@@ -197,11 +197,6 @@ a:active {
     border-bottom: 2px dashed black;
 }
 
-#sonnet-grid {
-    margin: 0 auto;
-    clip-path: inset(0 0 0 30%);
-}
-
 /* univocalic poem styling */
 
 #a:hover, #i:hover, #o:hover, #u:hover {
