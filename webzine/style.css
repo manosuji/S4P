@@ -145,9 +145,9 @@ iframe {
     border: 1px dotted;
     border-radius: 4px;
     padding:10px;
-    /* transform: rotate(5deg); */
-    max-width: fit-content;
+    max-width: 500px;
     margin: auto;
+    text-align: center;
 }
 
 .author-credit {
@@ -376,7 +376,7 @@ a:active {
 .big-image {
     max-width:900px;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 #displayed-image {
@@ -486,7 +486,8 @@ middle one goes left, bottom one moves up slightly */
     .photo {
         margin: 0px 25px 50px 25px;
     }
-    .angrydog {
+    .big-image {
         max-width: 400px;
+        height: auto;
     }
 }
