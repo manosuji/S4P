@@ -111,6 +111,7 @@ iframe {
 .content.center {
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 /* what does a callout card look like */
@@ -196,6 +197,10 @@ a:active {
     border-bottom: 2px dashed black;
 }
 
+#sonnet-grid {
+    margin: 0 auto;
+    clip-path: inset(0 0 0 30%);
+}
 
 /* univocalic poem styling */
 
