@@ -14,15 +14,20 @@ body {
     position: fixed;
     top: 10px;
     left: 20px;
-    color: yellowgreen;
+    color: blue;
     user-select: none;
+    font-size: 26px;
+}
+
+.menu-icon:hover {
+    color: yellowgreen
 }
 
 .nav {
     position: fixed;
     top: 50px;
     left: 20px;
-    font-size: 18px;
+    font-size: 26px;
     user-select: none;
 }
 
@@ -30,7 +35,7 @@ body {
     position: fixed;
     top: 10px;
     right: 20px;
-    font-size: 18px;
+    font-size: 26px;
 }
 
 /* what does the title text look like */
@@ -177,27 +182,27 @@ iframe {
 /* what do links look like */
 
 a {
-    color: yellowgreen;
+    color: blue;
     text-decoration: none;
     font-weight: bold;
 }
 
 a[href^="#"]:hover {
-    color: blue;
+    color: yellowgreen;
     text-decoration: none;
 }
 
 a:hover {
-    color: blue;
-    text-decoration: underline;
+    color: yellowgreen;
+    text-decoration: none;
 }
 
 a:visited {
-    color: yellowgreen;
+    color: blue;
 }
 
 a:active {
-    color: yellowgreen;
+    color: orangered;
 }
 
 /* specific styling */
@@ -413,6 +418,7 @@ a:active {
     display: block;
     max-width: 15%;
     margin: 10px;
+    z-index: 999;
 }
 
 .letra.one {
