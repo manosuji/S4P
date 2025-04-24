@@ -344,20 +344,20 @@ a:active {
     width: 150px;
 }
 
-.angrydog {
+.big-image {
     max-width:900px;
     margin-top: 50px;
     margin-bottom: 50px;
-    cursor: grab;
-}
-
-.angrydog:hover {
-    opacity: 0.5;
 }
 
 #displayed-image {
     width: 900px;
     height: 600px;
+    cursor: grab;
+}
+
+#displayed-image:hover {
+    opacity: 0.5;
 }
 
 .book {
