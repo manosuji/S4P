@@ -137,7 +137,6 @@ iframe {
     align-items: center;
 }
 
-/* what does a callout card look like */
 .callout {
     font-size: medium;
     position: relative;
@@ -149,6 +148,13 @@ iframe {
     /* transform: rotate(5deg); */
     max-width: fit-content;
     margin: auto;
+}
+
+.author-credit {
+    font-size: 18px;
+    width: fit-content;
+    margin: 0 auto;
+    font-style: italic;
 }
 
 /* what does a button look like */
