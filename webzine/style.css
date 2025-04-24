@@ -382,11 +382,6 @@ a:active {
 #displayed-image {
     width: 900px;
     height: 600px;
-    cursor: grab;
-}
-
-#displayed-image:hover {
-    opacity: 0.5;
 }
 
 .book {
