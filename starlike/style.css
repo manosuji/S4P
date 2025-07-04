@@ -66,6 +66,6 @@ a:visited {
 .mobile::before {
     font-family: raritas, sans-serif;
     color: white;
-    content: "✷ please open on larger device ✷";
+    content: "✷ larger device/window needed! ✷";
 }
 }
