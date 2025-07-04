@@ -1,17 +1,71 @@
 @font-face {
-  font-family: 'raritas';
-  src: url('./assets/raritas.otf')
+    font-family: 'raritas';
+    src: url('./assets/raritas.otf')
 }
-
-body {
-  font-family: 'raritas', sans-serif;
-}
-
+  
 @font-face {
-  font-family: 'stars';
-  src: url('./assets/star_ornaments.otf')
+font-family: 'stars';
+src: url('./assets/star_ornaments.otf')
 }
 
-body {
-  font-family: 'stars', sans-serif;
+#about-text {
+    font-family: raritas;
+    color:#4A2545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    line-height: 1.25em;
+}
+
+.br-button {
+    color:#51291E;
+    font-family: raritas;
+    font-size: 1.75em;
+    position: fixed;
+    bottom: 0px;
+    right: 1em;
+}
+
+#about-button {
+    right: 1.25em
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
+}
+
+a:visited {
+    color:inherit;
+}
+
+/* haven't translated this to mobile so what's below
+& just places a notice if viewed on a mobile device */
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: #4A2545;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  
+    body > *:not(.mobile) {
+      display: none !important;
+    }
+
+.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+.mobile::before {
+    font-family: raritas, sans-serif;
+    color: white;
+    content: "✷ please open on larger device ✷";
+}
 }
